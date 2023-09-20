@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* {
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color:gray;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding-right: 5px;
+    text-transform: capitalize;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header p {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 'box1 box1 box1 box1 box2 box2'
+    'box3 box3 box4 box4 box2 box2'
+    'box5 box5 box6 box6  box7 box7'
+    ;
+    margin-top: 40px;
+    gap: 50px;
+}
+
+#myImge {
+    grid-area: box1;
+}
+
+#myImge img {
+    width: 100%;
+}
+.side {
+    grid-area: box2;
+    color: white;
+    background-color: #050813;
+    padding: 10px;
+    font-size: 0.7rem;
+    text-transform: capitalize;
+}
+.side h1 {
+    text-transform: capitalize;
+    color: orange;
+}
+
+.side p {
+    color: gray;
+}
+.side div {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+}
+.text {
+    grid-area: box3;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+button {
+    width: 100px;
+    height: 38px;
+    background-color: #d98f07;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+}
+.small {
+    grid-area: box4;
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.one {
+    grid-area: box5;
+}
+
+.two {
+    grid-area: box6;
+}
+
+.three {
+    grid-area: box7;
+}
+.last {
+    display: flex;
+    align-items: center;
+}
+
+.last img {
+    width: 20%;
+   
+}
+.last p {
+    font-size: 1.5rem;
+    color: gray;
+}
+.last p:nth-child(3){
+    font-size: 0.8rem;
+}
+
+.last h2 {
+    font-size: 0.9rem;
+}
